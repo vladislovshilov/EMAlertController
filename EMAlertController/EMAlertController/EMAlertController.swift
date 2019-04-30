@@ -370,7 +370,7 @@ extension EMAlertController {
         buttonStackView.topAnchor.constraint(equalTo: messageTextView.bottomAnchor, constant: 16).isActive = true
         buttonStackView.leadingAnchor.constraint(equalTo: alertView.leadingAnchor, constant: 24).isActive = true
         buttonStackView.trailingAnchor.constraint(equalTo: alertView.trailingAnchor, constant: -24).isActive = true
-        buttonStackView.bottomAnchor.constraint(equalTo: alertView.bottomAnchor, constant: -16).isActive = true
+        buttonStackView.bottomAnchor.constraint(equalTo: alertView.bottomAnchor, constant: -24).isActive = true
         buttonStackViewHeightConstraint = buttonStackView.heightAnchor.constraint(equalToConstant: (Dimension.buttonHeight * CGFloat(buttonStackView.arrangedSubviews.count)))
         buttonStackViewHeightConstraint!.isActive = true
     }
