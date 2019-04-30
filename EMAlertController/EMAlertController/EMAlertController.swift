@@ -50,7 +50,7 @@ open class EMAlertController: UIViewController {
         let alertView = UIView()
         alertView.translatesAutoresizingMaskIntoConstraints = false
         alertView.backgroundColor = .emAlertViewColor
-        alertView.layer.cornerRadius = 5
+        alertView.layer.cornerRadius = 15
         alertView.layer.shadowColor = UIColor.black.cgColor
         alertView.layer.shadowOpacity = 0.2
         alertView.layer.shadowOffset = CGSize(width: 0, height: 0)
@@ -72,7 +72,7 @@ open class EMAlertController: UIViewController {
     internal var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.font = UIFont.boldSystemFont(ofSize: 24)
         label.textAlignment = .center
         label.textColor = .black
         label.numberOfLines = 2
@@ -83,7 +83,7 @@ open class EMAlertController: UIViewController {
     internal var messageTextView: UITextView = {
         let textview = UITextView()
         textview.translatesAutoresizingMaskIntoConstraints = false
-        textview.font = UIFont.systemFont(ofSize: 14)
+        textview.font = UIFont.systemFont(ofSize: 13)
         textview.textAlignment = .center
         textview.isEditable = false
         textview.showsHorizontalScrollIndicator = false

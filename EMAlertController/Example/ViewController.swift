@@ -30,6 +30,9 @@ extension ViewController {
     }
     action2.backgroundColor = .red
     action2.titleColor = .white
+    alert.cornerRadius = 55
+    alert.titleFont = UIFont.systemFont(ofSize: 32)
+    alert.messageFont = UIFont.systemFont(ofSize: 22)
     
     alert.addAction(action1)
     alert.addAction(action2)
