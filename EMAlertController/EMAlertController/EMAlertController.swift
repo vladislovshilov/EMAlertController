@@ -11,7 +11,7 @@ import UIKit
 // MARK: - EMAlerView Dimensions
 enum Dimension {
   static let padding: CGFloat = 15.0
-  static let buttonHeight: CGFloat = 50.0
+  static let buttonHeight: CGFloat = 40.0
   static let iconHeight: CGFloat = 100.0
   static let textFieldHeight: CGFloat = 30.0
   
@@ -356,9 +356,9 @@ extension EMAlertController {
     
     // actionStackView Constraints    
     buttonStackView.topAnchor.constraint(equalTo: messageTextView.bottomAnchor, constant: 8).isActive = true
-    buttonStackView.leadingAnchor.constraint(equalTo: alertView.leadingAnchor, constant: 0).isActive = true
-    buttonStackView.trailingAnchor.constraint(equalTo: alertView.trailingAnchor, constant: 0).isActive = true
-    buttonStackView.bottomAnchor.constraint(equalTo: alertView.bottomAnchor, constant: 0).isActive = true
+    buttonStackView.leadingAnchor.constraint(equalTo: alertView.leadingAnchor, constant: 24).isActive = true
+    buttonStackView.trailingAnchor.constraint(equalTo: alertView.trailingAnchor, constant: -24).isActive = true
+    buttonStackView.bottomAnchor.constraint(equalTo: alertView.bottomAnchor, constant: -8).isActive = true
     buttonStackViewHeightConstraint = buttonStackView.heightAnchor.constraint(equalToConstant: (Dimension.buttonHeight * CGFloat(buttonStackView.arrangedSubviews.count)))
     buttonStackViewHeightConstraint!.isActive = true
   }
