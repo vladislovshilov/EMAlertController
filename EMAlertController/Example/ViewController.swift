@@ -20,16 +20,6 @@ extension ViewController {
   @IBAction func showAlert(sender: UIButton) {
     
     let alert = EMAlertController(icon: UIImage(named: "icon"), title: "EMAlertView Title", message: "This is a simple message for the EMAlertView")
-
-    alert.addTextField { (textField) in
-      textField?.placeholder = "Username"
-    }
-
-    alert.addTextField { (textField) in
-      textField?.placeholder = "Password"
-      textField?.isSecureTextEntry = true
-    }
-    
     let action1 = EMAlertAction(title: "CANCEL", style: .cancel)
     let action2 = EMAlertAction(title: "CONFIRM", style: .normal) {
       // Perform action
@@ -38,6 +28,8 @@ extension ViewController {
       print(text)
       print(password)
     }
+    action2.backgroundColor = .red
+    action2.titleColor = .white
     
     alert.addAction(action1)
     alert.addAction(action2)
